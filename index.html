@@ -3,33 +3,133 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moje portfólio — začiatok</title>
-  <!-- Vzhľad stránky je v samostatnom súbore styles.css (vrstva CSS) -->
+  <meta name="theme-color" content="#f5f7f3">
+  <meta name="description" content="Portfólio Adama Sabola. Digitálne nápady, weby a projekty s dôrazom na detail.">
+  <title>Adam Sabol — Digitálne zážitky</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
 
-  <main class="uvitanie">
-    <div class="emoji">👋</div>
-    <h1>Tu vznikne moje portfólio</h1>
-    <p class="podtext">
-      Toto je štartová stránka kurzu <strong>Tvorba webstránok</strong>.
-      Odteraz ju budeš meniť ty — s pomocou AI asistenta.
-    </p>
+  <header class="site-header">
+    <nav class="navigation wrap" aria-label="Hlavná navigácia">
+      <a class="wordmark" href="#domov" aria-label="Adam Sabol, domov">AS<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Otvoriť navigáciu">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#projekty">Projekty</a>
+        <a href="#o-mne">O mne</a>
+        <a class="nav-contact" href="#kontakt">Kontakt <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
 
-    <div class="karta">
-      <p class="karta-nadpis">Ako začať:</p>
-      <ol>
-        <li>Otvor <strong>Copilot Chat</strong> (ikona Copilota vpravo) — sem píšeš, čo chceš vytvoriť.</li>
-        <li>Tento súbor <code>index.html</code> si pozri v <strong>živom náhľade</strong>: pravý klik naň → <em>Show Preview</em>.</li>
-        <li>Choď na <strong>Blok 7</strong> kurzu a postupuj podľa neho.</li>
-      </ol>
-    </div>
+  <main id="obsah">
+    <section class="hero wrap" id="domov" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Adam Sabol <span class="eyebrow-divider">/</span> Digitálna tvorba</p>
+        <h1 id="hero-title">Nápady, ktoré<br>fungujú <span>aj vyzerajú.</span></h1>
+        <p class="hero-intro">Navrhujem a tvorím digitálne zážitky, ktoré spájajú premyslený dizajn s každodennou použiteľnosťou.</p>
+        <a class="text-link" href="#projekty">Pozrieť projekty <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art reveal" aria-hidden="true">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-monogram">A<span>S</span></div>
+        <span class="art-note note-top">Nápad → výsledok</span>
+        <span class="art-note note-bottom">Tvorené s citom pre detail</span>
+        <span class="art-cross cross-one">+</span>
+        <span class="art-cross cross-two">+</span>
+      </div>
+      <div class="hero-index" aria-hidden="true"><span>01</span> / 03</div>
+    </section>
 
-    <p class="poznamka">
-      Keď spravíš prvú zmenu, tento text pokojne zmaž — je len na úvod.
-    </p>
+    <section class="projects section-pad" id="projekty" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Výber z tvorby <span class="eyebrow-divider">/</span> 2024—26</p>
+            <h2 id="projects-title">Projekty<span class="heading-mark">.</span></h2>
+          </div>
+          <p>Každý projekt začína otázkou.<br>Tu sú tri odpovede.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-art art-library" aria-hidden="true">
+              <div class="library-window">
+                <div class="window-dots"><i></i><i></i><i></i></div>
+                <div class="library-title">Čítaj ďalej<span>↗</span></div>
+                <div class="book-row"><b></b><b></b><b></b><b></b></div>
+                <span class="art-caption">MESTSKÁ KNIŽNICA</span>
+              </div>
+              <span class="project-number">01</span>
+            </div>
+            <div class="project-meta"><span>Webový dizajn</span><span>2026</span></div>
+            <h3>Čítaj ďalej</h3>
+            <p>Nový digitálny domov pre mestskú knižnicu a jej čitateľov.</p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-art art-garden" aria-hidden="true">
+              <div class="garden-sun"></div>
+              <div class="garden-copy"><span>RASTIE TO SPOLU</span><strong>Mestský<br>sad</strong><i>Komunita v každom liste.</i></div>
+              <div class="garden-leaf leaf-one"></div>
+              <div class="garden-leaf leaf-two"></div>
+              <span class="project-number">02</span>
+            </div>
+            <div class="project-meta"><span>Identita & web</span><span>2025</span></div>
+            <h3>Mestský sad</h3>
+            <p>Vizuálna identita komunitnej záhrady, ktorá spája susedov.</p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-art art-studio" aria-hidden="true">
+              <div class="studio-stamp">FORMA<br><small>štúdio pohybu</small></div>
+              <div class="studio-lines"><span></span><span></span><span></span></div>
+              <span class="studio-tag">POHYB JE<br>ZAČIATOK</span>
+              <span class="project-number">03</span>
+            </div>
+            <div class="project-meta"><span>Digitálny produkt</span><span>2025</span></div>
+            <h3>Forma</h3>
+            <p>Jednoduchý rezervačný zážitok pre malé pohybové štúdio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="o-mne" aria-labelledby="about-title">
+      <div class="wrap about-layout">
+        <p class="eyebrow reveal">Niečo o mne <span class="eyebrow-divider">/</span> 02</p>
+        <div class="about-copy reveal">
+          <h2 id="about-title">Dobrý dizajn<br>je ten, ktorý <span>pomáha.</span></h2>
+          <div class="about-details">
+            <p>Som Adam — zvedavý tvorca, ktorého baví meniť zložité veci na jasné a príjemné zážitky. Pri každom projekte hľadám rovnováhu medzi tým, čo je užitočné, a tým, čo má charakter.</p>
+            <p>Od prvého náčrtu po posledný detail verím v spoluprácu, otvorenú myseľ a malé rozhodnutia, ktoré robia veľký rozdiel.</p>
+          </div>
+          <a class="text-link text-link-light" href="#kontakt">Poďme niečo vytvoriť <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="about-aside reveal" aria-hidden="true"><span>AS</span><i></i><small>TVORBA S ÚMYSLOM</small></div>
+      </div>
+    </section>
   </main>
 
+  <footer class="site-footer" id="kontakt">
+    <div class="wrap footer-top reveal">
+      <div>
+        <p class="eyebrow">Máš nápad? <span class="eyebrow-divider">/</span> Ozvi sa</p>
+        <h2>Začnime <span>rozhovor.</span></h2>
+      </div>
+      <a class="contact-link" href="https://github.com/AdamSabol16" target="_blank" rel="noreferrer">github.com/AdamSabol16 <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="wrap footer-bottom">
+      <a class="wordmark footer-mark" href="#domov" aria-label="Späť na začiatok">AS<span>.</span></a>
+      <p>Navrhnuté a vytvorené s rozvahou.</p>
+      <p>© <span id="current-year">2026</span> Adam Sabol</p>
+    </div>
+  </footer>
 </body>
 </html>
