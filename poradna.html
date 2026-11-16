@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F8FAFC">
+  <meta name="description" content="Finančná poradňa a orientačná kalkulačka pravidelného investovania.">
+  <title>Poradňa — Finančný poradca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navigation wrap" aria-label="Hlavná navigácia">
+      <a class="brand" href="index.html">Finančný poradca<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Otvoriť navigáciu"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Hlavná stránka</a>
+        <a href="sluzby.html">Služby</a>
+        <a href="poradna.html" aria-current="page">Poradňa</a>
+        <a href="o-mne.html">O mne</a>
+        <a class="nav-cta" href="kontakt.html">Dohodnúť konzultáciu <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-intro wrap">
+      <p class="eyebrow">Financie zrozumiteľne</p>
+      <h1>Poradňa a <span>kalkulačka.</span></h1>
+      <p>Začnite orientačným výpočtom alebo si prečítajte, na čo myslieť pri dôležitých finančných rozhodnutiach.</p>
+    </section>
+    <section class="calculator section" id="kalkulacka">
+      <div class="wrap calculator-layout">
+        <div>
+          <p class="eyebrow">Orientačný výpočet</p>
+          <h2>Malé kroky,<br><span>dlhší horizont.</span></h2>
+          <p class="calculator-copy">Pozrite si modelový príklad pravidelného investovania. Výpočet nezohľadňuje poplatky ani infláciu a nezaručuje budúci výnos.</p>
+        </div>
+        <div class="calculator-card">
+          <label for="monthly-investment">Mesačná investícia <strong id="monthly-value">200 €</strong></label>
+          <input id="monthly-investment" type="range" min="50" max="1000" step="50" value="200">
+          <div class="range-labels"><span>50 €</span><span>1 000 €</span></div>
+          <label for="investment-term">Dĺžka investovania <strong id="term-value">20 rokov</strong></label>
+          <input id="investment-term" type="range" min="5" max="35" step="1" value="20">
+          <div class="range-labels"><span>5 rokov</span><span>35 rokov</span></div>
+          <div class="estimate"><span>Modelová hodnota pri 5 % ročne</span><strong id="investment-result">82 200 €</strong></div>
+          <a class="button button-light" href="kontakt.html">Prebrať môj plán <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="page-section">
+      <div class="wrap">
+        <p class="eyebrow">Užitočné témy</p>
+        <h2 class="page-section-title">Čo si premyslieť <span>pred rozhodnutím.</span></h2>
+        <div class="detail-grid">
+          <article class="detail-card">
+            <p class="eyebrow">Investovanie</p>
+            <h2>Najprv cieľ, potom produkt</h2>
+            <p>Pred výberom investície si ujasnite, na čo peniaze odkladáte, kedy ich budete potrebovať a aké výkyvy dokážete zvládnuť.</p>
+            <a class="text-link" href="sluzby.html">Viac o investovaní <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="detail-card">
+            <p class="eyebrow">Hypotéka</p>
+            <h2>Splátka nie je jediný náklad</h2>
+            <p>Pri porovnávaní financovania bývania zohľadnite aj poplatky, podmienky úveru a rezervu na nečakané výdavky.</p>
+            <a class="text-link" href="sluzby.html">Viac o hypotékach <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="detail-card">
+            <p class="eyebrow">Finančná rezerva</p>
+            <h2>Rezerva pre nečakané situácie</h2>
+            <p>Dostupná rezerva môže pomôcť zvládnuť nečakané výdavky bez unáhleného siahnutia na dlhodobé investície.</p>
+            <a class="text-link" href="kontakt.html">Prebrať svoj plán <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <p class="wrap disclaimer">Kalkulačka a články slúžia len na všeobecnú orientáciu. Nejde o prísľub výnosu ani individuálne investičné odporúčanie.</p>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="index.html">Finančný poradca<span>.</span></a><p>Informácie na stránke sú všeobecné a nepredstavujú investičné odporúčanie.</p><span>© <span id="current-year">2026</span> Finančný poradca</span></div></footer>
+</body>
+</html>

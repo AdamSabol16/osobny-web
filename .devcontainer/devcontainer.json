@@ -16,6 +16,7 @@
         "ms-vscode.live-server"
       ],
       "settings": {
+        "livePreview.openPreviewTarget": "External Browser",
         "livePreview.defaultPreviewPath": "/index.html",
         "files.autoSave": "afterDelay"
       }
@@ -27,6 +28,6 @@
   // },
 
   "portsAttributes": {
-    "3000": { "label": "Náhľad webu", "onAutoForward": "openPreview" }
+    "3000": { "label": "Náhľad webu", "onAutoForward": "openBrowser" }
   }
 }

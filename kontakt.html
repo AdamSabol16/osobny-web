@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F8FAFC">
+  <meta name="description" content="Dohodnite si nezáväznú konzultáciu s finančným poradcom.">
+  <title>Kontakt — Finančný poradca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navigation wrap" aria-label="Hlavná navigácia">
+      <a class="brand" href="index.html">Finančný poradca<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Otvoriť navigáciu"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Hlavná stránka</a>
+        <a href="sluzby.html">Služby</a>
+        <a href="poradna.html">Poradňa</a>
+        <a href="o-mne.html">O mne</a>
+        <a class="nav-cta" href="kontakt.html" aria-current="page">Dohodnúť konzultáciu <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-intro wrap">
+      <p class="eyebrow">Prvý krok je jednoduchý</p>
+      <h1>Porozprávajme sa<br><span>o vašich plánoch.</span></h1>
+      <p>Napíšte mi, čo práve riešite. Úvodná konzultácia je nezáväzná a prejdeme si na nej vaše možnosti.</p>
+    </section>
+    <section class="page-section">
+      <div class="wrap contact-layout">
+        <div class="contact-info">
+          <p class="eyebrow">Kontaktné údaje</p>
+          <h2 class="contact-page-title">Ozvite sa, keď vám to vyhovuje.</h2>
+          <p>Vyplňte krátky formulár alebo mi napíšte priamo. Dohodneme si čas a spôsob stretnutia, ktorý vám bude vyhovovať.</p>
+          <p class="contact-detail">E-mail<br><a href="mailto:vas@email.sk">vas@email.sk</a></p>
+          <p class="contact-detail">Telefón<br><a href="tel:+421900000000">+421 900 000 000</a></p>
+          <p class="placeholder-note">Ukážkové kontakty — pred zverejnením ich nahraďte vlastnými.</p>
+          <div class="calendar-card"><span aria-hidden="true">▦</span><p><strong>Online alebo osobne</strong><br>Termín si dohodneme e-mailom alebo telefonicky.</p></div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <h3>Nezáväzný dopyt</h3>
+          <p class="form-intro">Ozvem sa vám a dohodneme si úvodný rozhovor.</p>
+          <label>Meno<input name="name" autocomplete="name" placeholder="Vaše meno" required></label>
+          <label>Telefón<input name="phone" type="tel" autocomplete="tel" placeholder="+421" required></label>
+          <label>E-mail<input name="email" type="email" autocomplete="email" placeholder="vas@email.sk" required></label>
+          <label>Čo vás zaujíma?
+            <select name="service" required>
+              <option value="" selected disabled>Vyberte službu</option>
+              <option>Hypotéky a bývanie</option>
+              <option>Investície a dôchodok</option>
+              <option>Poistenie a ochrana príjmu</option>
+              <option>Financie pre SZČO</option>
+              <option>Iné</option>
+            </select>
+          </label>
+          <label>Správa <span class="optional">(nepovinné)</span><textarea name="message" rows="3" placeholder="Čo by ste chceli vyriešiť?"></textarea></label>
+          <label class="consent"><input type="checkbox" name="consent" required><span>Súhlasím s použitím údajov na vybavenie dopytu. <a href="#ochrana">Ochrana osobných údajov</a></span></label>
+          <button class="button" type="submit">Odoslať dopyt <span aria-hidden="true">↗</span></button>
+          <p class="form-note" id="form-message" role="status" aria-live="polite">Ukážkový formulár — pred zverejnením ho prepojte s e-mailom.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="index.html">Finančný poradca<span>.</span></a><p>Informácie na stránke sú všeobecné a nepredstavujú investičné odporúčanie.</p><span>© <span id="current-year">2026</span> Finančný poradca</span></div></footer>
+</body>
+</html>

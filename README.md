@@ -13,7 +13,11 @@ Vitaj! Toto je tvoj štartový projekt pre predmet **Návrh a tvorba webových s
 
 | Súbor / priečinok | Na čo je |
 | ----------------- | -------- |
-| `index.html` | Tvoja hlavná stránka — jej **obsah** (zatiaľ len úvodná — čoskoro ju nahradíš svojím portfóliom). |
+| `index.html` | Úvodná stránka finančného poradenstva. |
+| `sluzby.html` | Podstránka s prehľadom finančných služieb. |
+| `poradna.html` | Finančná poradňa s orientačnou investičnou kalkulačkou. |
+| `o-mne.html` | Podstránka o poradcovi a spôsobe spolupráce. |
+| `kontakt.html` | Kontakty a ukážkový formulár. |
 | `styles.css` | **Vzhľad** stránky — farby, písmo, rozloženie (vrstva CSS). |
 | `docs/` | Sem sa uloží tvoj **style guide** (dizajnová referencia z Bloku 6) a neskôr tvoj **design brief** (`zadanie-webu.md`, Blok 11). |
 | `img/` | Sem si budeš dávať **obrázky a fotky** (napr. do portfólia v Bloku 7). |
