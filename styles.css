@@ -39,8 +39,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.motion-ready .reveal { opacity: 1; transform: none; transition: none; }
-
 a { color: inherit; }
 button, input, select { font: inherit; }
 button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
@@ -199,6 +197,11 @@ h1, h2, h3, p { margin-top: 0; }
   border-radius: 20px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(246, 250, 255, 0.98) 100%);
   box-shadow: 0 20px 44px rgba(16, 39, 67, 0.06);
+  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+.detail-card:focus-within { border-color: rgba(36,104,242,0.25); box-shadow: 0 22px 46px rgba(18, 35, 61, 0.12); }
+@media (hover: hover) {
+  .detail-card:hover, .motion-ready .detail-card.reveal.is-visible:hover { transform: translateY(-5px); border-color: rgba(36,104,242,0.25); box-shadow: 0 22px 46px rgba(18, 35, 61, 0.12); }
 }
 .detail-card .service-icon { margin-bottom: 14px; }
 .detail-card .eyebrow { margin-bottom: 7px; font-size: 8px; }
@@ -418,4 +421,5 @@ input[type="range"]::-moz-range-thumb { width: 10px; height: 10px; border: 3px s
   .partner-track { animation: none; }
   .service-card, .service-icon { transition: none !important; }
   .service-card:hover, .service-card:focus-within, .service-card:hover .service-icon, .service-card:focus-within .service-icon { transform: none; }
+  .detail-card:hover, .detail-card:focus-within { transform: none; }
 }
