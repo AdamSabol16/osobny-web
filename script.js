@@ -14,13 +14,7 @@ if (menuButton && navLinks) {
   });
 
   navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", (event) => {
-      const href = link.getAttribute("href");
-      if (href && !href.startsWith("#") && !href.startsWith("mailto:") && !href.startsWith("tel:")) {
-        event.preventDefault();
-        window.location.assign(href);
-      }
-
+    link.addEventListener("click", () => {
       menuButton.setAttribute("aria-expanded", "false");
       navLinks.classList.remove("is-open");
     });
